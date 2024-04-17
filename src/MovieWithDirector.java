@@ -21,6 +21,6 @@ public class MovieWithDirector extends Movie {
 
     @Override
     public String toString() {
-        return super.toString() + "\nDirector: " + getDirector();
+        return super.toString() + "| Director: " + getDirector();
     }
 }

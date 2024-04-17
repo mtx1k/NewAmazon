@@ -16,11 +16,11 @@ public class ChildrensBook extends Book {
 
     @Override
     public void printDetails() {
-        System.out.println(super.toString() + "\nRecommended Age: " + getRecommendedAgeInfo());
+        super.printDetails();
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nRecommended Age: " + getRecommendedAgeInfo();
+        return super.toString() + "| Recommended Age: " + getRecommendedAgeInfo();
     }
 }

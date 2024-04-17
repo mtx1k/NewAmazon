@@ -1,4 +1,4 @@
-public class Movie implements Product {
+public class Movie implements Product, Comparable<Movie> {
     private long productId;
     private int price;
     private String title;
@@ -50,11 +50,21 @@ public class Movie implements Product {
 
     @Override
     public String toString() {
-        String description = "--- Movie Details ---" +
-                "\nId: " + getProductId() +
-                "\nTitle: " + getTitle() +
-                "\nGenre: " + getGenre() +
-                "\nPrice: " + getPrice();
+        String description = "Movie: " +
+                " Id: " + getProductId() +
+                "| Title: " + getTitle() +
+                "| Genre: " + getGenre() +
+                "| Price: " + getPrice();
         return description;
+    }
+
+    @Override
+    public int compareTo(Movie o) {
+        if(this.productId < o.productId) {
+            return -1;
+        } else if (this.productId > o.productId) {
+            return 1;
+        }
+        return 0;
     }
 }

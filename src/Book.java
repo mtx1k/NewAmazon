@@ -50,10 +50,10 @@ public class Book implements Product {
 
     @Override
     public String toString() {
-        return "--- Book Details ---" +
-                "\nId: " + getProductId() +
-                "\nTitle: " + getTitle() +
-                "\nAuthor: " + getAuthor() +
-                "\nPrice: " + getPrice();
+        return "Book: " +
+                " Id: " + getProductId() +
+                "| Title: " + getTitle() +
+                "| Author: " + getAuthor() +
+                "| Price: " + getPrice();
     }
 }
