@@ -17,7 +17,6 @@ public class MovieWithDirector extends Movie {
     @Override
     public void printDetails() {
         super.printDetails();
-        System.out.println("Director: " + getDirector());
     }
 
     @Override
